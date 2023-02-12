@@ -48,7 +48,7 @@ router.get("/:email",(req,res)=>{
 
 
 // POST request: Create a new user
-router.post("/new",(req,res)=>{
+router.post("/",(req,res)=>{
   // Copy the code here
   users.push({"firstName":req.query.firstName,"lastName":req.query.lastName,"email":req.query.email,"DOB":req.query.DOB});
   res.send("The user" + (' ')+ (req.query.firstName) + " Has been added!")
